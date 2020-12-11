@@ -13,8 +13,6 @@ def calculatePrice():
       raise ValueError('Missing Required Params')
     market_val = req_data['market_val']
     quantity = req_data['quantity']
-    print(market_val)
-    print(quantity)
     
     if market_val < 0 or quantity < 0:
       raise ValueError('Params are invalid')
